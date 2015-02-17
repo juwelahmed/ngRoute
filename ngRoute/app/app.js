@@ -14,6 +14,11 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
           templateUrl: 'app/component/student/view/index.html',
           controller: 'StudentCtrl'
       }).
+    when('/student/edit/category/:id', {
+        //templateUrl: 'app/component/student/view/edit.html',
+        template:'<h1>Hello</h1>',
+        controller: 'StudentEditCtrl'
+    }).
       when('/register', {
           templateUrl: 'app/view/register.html',
           controller: 'RegisterCtrl'

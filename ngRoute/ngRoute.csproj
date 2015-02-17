@@ -57,8 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\component\student\controller\StudentEditCtrl.js" />
     <Content Include="app\component\student\controller\StudentCtrl.js" />
     <Content Include="app\component\student\service\StudentService.js" />
+    <Content Include="app\component\student\view\edit.html" />
     <Content Include="app\component\student\view\index.html" />
     <Content Include="app\css\bootstrap-theme.css" />
     <Content Include="app\css\bootstrap-theme.min.css" />

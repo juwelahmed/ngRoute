@@ -1,20 +1,25 @@
-﻿<h1>{{title}}</h1>
+﻿<div class="row">
+    <h1>{{title}}</h1>
+</div>
+
 <div class="row">
     <a href="/student/create" class="btn btn-primary">Create Name</a>
 </div>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr ng-repeat="student in students">
-            <td>{{student.id}}</td>
-            <td>{{student.name}}</td>
-            <td><a href="/student/edit" class="btn"><span class="glyphicon glyphicon-edit"></span></a></td>
-            <td><a href="/student/edit" class="btn"><span class="glyphicon glyphicon-trash"></span></a></td>
-        </tr>
-    </tbody>
-</table>
+<div class="row">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="student in students">
+                <td>{{student.id}}</td>
+                <td>{{student.name}}</td>
+                <td><a href="/student/edit/category/{{student.id}}" class="btn"><span class="glyphicon glyphicon-edit"></span></a></td>
+                <td><a href="/student/delete/{{student.id}}" class="btn"><span class="glyphicon glyphicon-trash"></span></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
