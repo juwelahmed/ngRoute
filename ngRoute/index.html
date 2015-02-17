@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title></title>
+    <link href="app/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .shadow {
+            box-shadow: 1px 2px 6px #888888;
+        }
+
+        .buffer {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li ><a href="/student">Student</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container buffer">
+        <ng-view></ng-view>
+    </div>
+    <script src="app/js/jquery-1.10.2.min.js"></script>
+    <script src="app/js/angular.min.js"></script>
+    <script src="app/js/angular-route.min.js"></script>
+    <script src="app/js/bootstrap.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/shared/controller/ContactCtrl.js"></script>
+    <script src="app/shared/controller/HomeCtrl.js"></script>
+    <script src="app/component/student/controller/StudentCtrl.js"></script>
+</body>
+
+</html>

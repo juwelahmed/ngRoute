@@ -1,0 +1,6 @@
+E:\GtRoot\ngRoute\ngRoute\bin\ngRoute.dll.config
+E:\GtRoot\ngRoute\ngRoute\bin\ngRoute.dll
+E:\GtRoot\ngRoute\ngRoute\bin\ngRoute.pdb
+E:\GtRoot\ngRoute\ngRoute\obj\Debug\ngRoute.csprojResolveAssemblyReference.cache
+E:\GtRoot\ngRoute\ngRoute\obj\Debug\ngRoute.dll
+E:\GtRoot\ngRoute\ngRoute\obj\Debug\ngRoute.pdb
