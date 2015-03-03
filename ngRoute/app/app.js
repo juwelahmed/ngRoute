@@ -1,4 +1,4 @@
-﻿var app = angular.module('app', ['ngRoute']);
+﻿var app = angular.module('app', ['ngRoute', 'toaster']);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
@@ -15,8 +15,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
           controller: 'StudentCtrl'
       }).
     when('/student/edit/category/:id', {
-        //templateUrl: 'app/component/student/view/edit.html',
-        template:'<h1>Hello</h1>',
+        templateUrl: 'app/component/student/view/edit.html',
         controller: 'StudentEditCtrl'
     }).
       when('/register', {

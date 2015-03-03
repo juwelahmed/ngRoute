@@ -1,9 +1,9 @@
 ﻿angular.module('app').factory('StudentService', function () {
     var factory = {}
-
+    var students = [];
     
     factory.getStudents = function () {
-        var students = [];
+        students = [];
         var student = new Student(1, 'Juwel Ahmed')
         students.push(student);
         student = new Student(2, 'Asraful Islam')
@@ -16,6 +16,17 @@
         return students;
     }
 
+    factory.getStudent = function (id){
+        if (students.length > 0) {
+            for (var i = 0; i <= students.length - 1; i++) {
+                var student = students[i];
+                if (id == student.id) {
+                    return student;
+                }
+            }
+            return null;
+        }
+    }
     return factory;
 
 })
