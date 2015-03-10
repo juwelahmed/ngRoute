@@ -1,4 +1,4 @@
-﻿var app = angular.module('app', ['ngRoute', 'toaster']);
+﻿var app = angular.module('app', ['ngRoute', 'toaster', 'mgcrea.ngStrap']);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
@@ -18,6 +18,10 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         templateUrl: 'app/component/student/view/edit.html',
         controller: 'StudentEditCtrl'
     }).
+       when('/student/create', {
+           templateUrl: 'app/component/student/view/edit.html',
+           controller: 'StudentEditCtrl'
+       }).
       when('/register', {
           templateUrl: 'app/view/register.html',
           controller: 'RegisterCtrl'
@@ -27,3 +31,10 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
       });
     $locationProvider.html5Mode(true);
 }]);
+
+app.config(function ($selectProvider) {
+    angular.extend($selectProvider.defaults, {
+        animation: 'am-flip-x',
+        sort: false
+    });
+})

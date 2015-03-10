@@ -62,12 +62,19 @@
     <Content Include="app\component\student\service\StudentService.js" />
     <Content Include="app\component\student\view\edit.html" />
     <Content Include="app\component\student\view\index.html" />
+    <Content Include="app\css\bootstrap-datepicker.css" />
+    <Content Include="app\css\bootstrap-datetimepicker.min.css" />
     <Content Include="app\css\bootstrap-theme.css" />
     <Content Include="app\css\bootstrap-theme.min.css" />
     <Content Include="app\css\bootstrap.css" />
     <Content Include="app\css\bootstrap.min.css" />
+    <Content Include="app\css\toaster.css" />
     <Content Include="app\css\toaster.min.css" />
     <Content Include="app\js\angular-route.min.js.map" />
+    <Content Include="app\js\angular-strap.js" />
+    <Content Include="app\js\angular-strap.min.js" />
+    <Content Include="app\js\angular-strap.tpl.js" />
+    <Content Include="app\js\angular-strap.tpl.min.js" />
     <Content Include="app\js\angular.min.js" />
     <Content Include="app\js\angular.min.js.map" />
     <Content Include="app\css\bootstrap-theme.css.map" />
@@ -86,9 +93,12 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\js\angular-route.min.js" />
+    <Content Include="app\js\bootstrap-datepicker.js" />
+    <Content Include="app\js\bootstrap-datetimepicker.min.js" />
     <Content Include="app\js\bootstrap.js" />
     <Content Include="app\js\bootstrap.min.js" />
     <Content Include="app\js\jquery-1.10.2.min.js" />
+    <Content Include="app\js\toaster.js" />
     <Content Include="app\js\toaster.min.js" />
     <Content Include="app\shared\controller\ContactCtrl.js" />
     <Content Include="app\shared\controller\HomeCtrl.js" />

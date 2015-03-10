@@ -4,13 +4,13 @@
     
     factory.getStudents = function () {
         students = [];
-        var student = new Student(1, 'Juwel Ahmed')
+        var student = new Student(1, 'Juwel Ahmed',new Date())
         students.push(student);
-        student = new Student(2, 'Asraful Islam')
+        student = new Student(2, 'Asraful Islam', new Date())
         students.push(student);
-        student = new Student(3, 'Zillur Rahman')
+        student = new Student(3, 'Zillur Rahman', new Date())
         students.push(student);
-        student = new Student(4, 'Azharul Islam')
+        student = new Student(4, 'Azharul Islam', new Date())
         students.push(student);
 
         return students;
@@ -31,7 +31,8 @@
 
 })
 
-function Student(id, name) {
+function Student(id, name, enrollDate) {
     this.id = id;
     this.name = name;
+    this.enrollDate = enrollDate;
 }
