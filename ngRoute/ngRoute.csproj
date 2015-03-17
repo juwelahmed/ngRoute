@@ -57,6 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\component\account\controller\RegisterCtrl.js" />
+    <Content Include="app\component\account\view\messages.html" />
+    <Content Include="app\component\account\view\registerView.html" />
     <Content Include="app\component\student\controller\StudentEditCtrl.js" />
     <Content Include="app\component\student\controller\StudentCtrl.js" />
     <Content Include="app\component\student\service\StudentService.js" />
@@ -70,7 +73,14 @@
     <Content Include="app\css\bootstrap.min.css" />
     <Content Include="app\css\toaster.css" />
     <Content Include="app\css\toaster.min.css" />
+    <Content Include="app\js\angular-animate.js" />
+    <Content Include="app\js\angular-animate.min.js" />
+    <Content Include="app\js\angular-messages.js" />
+    <Content Include="app\js\angular-messages.min.js" />
+    <Content Include="app\js\angular-route.js" />
     <Content Include="app\js\angular-route.min.js.map" />
+    <Content Include="app\js\angular-sanitize.js" />
+    <Content Include="app\js\angular-sanitize.min.js" />
     <Content Include="app\js\angular-strap.js" />
     <Content Include="app\js\angular-strap.min.js" />
     <Content Include="app\js\angular-strap.tpl.js" />
@@ -83,6 +93,9 @@
     <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="app\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\js\angular-animate.min.js.map" />
+    <Content Include="app\js\angular-messages.min.js.map" />
+    <Content Include="app\js\angular-sanitize.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -102,6 +115,7 @@
     <Content Include="app\js\toaster.min.js" />
     <Content Include="app\shared\controller\ContactCtrl.js" />
     <Content Include="app\shared\controller\HomeCtrl.js" />
+    <Content Include="app\shared\directive\compareTo.js" />
     <Content Include="app\shared\view\contact.html" />
     <Content Include="app\shared\view\home.html" />
     <Content Include="index.html" />

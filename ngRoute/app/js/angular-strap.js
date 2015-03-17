@@ -1392,7 +1392,7 @@ angular.module('mgcrea.ngStrap.datepicker', [
 
         var weekDaysMin = $dateFormatter.weekdaysShort(lang);
         var weekDaysLabels = weekDaysMin.slice(options.startWeek).concat(weekDaysMin.slice(0, options.startWeek));
-        var weekDaysLabelsHtml = $sce.trustAsHtml('<th class="dow text-center">' + weekDaysLabels.join('</th><th class="dow text-center">') + '</th>');
+        var weekDaysLabelsHtml = $sce.trustAsHtml('<th class="row text-center">' + weekDaysLabels.join('</th><th class="row text-center">') + '</th>');
 
         var startDate = picker.$date || (options.startDate ? dateParser.getDateForAttribute('startDate', options.startDate) : new Date());
         var viewDate = {year: startDate.getFullYear(), month: startDate.getMonth(), date: startDate.getDate()};

@@ -15,7 +15,7 @@
         }
         .datepicker.dropdown-menu {
             width: 250px;
-            height: 250px;
+            height: 235px;
         }
 
             .datepicker.dropdown-menu button {
@@ -70,6 +70,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/contact">Contact</a></li>
+                    <li><a href="/register">Register</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -77,23 +78,26 @@
     <div class="container buffer">
         <ng-view></ng-view>
     </div>
+    
     <script src="app/js/jquery-1.10.2.min.js"></script>
     <script src="app/js/angular.min.js"></script>
-    <script src="http://code.angularjs.org/1.3.3/angular-animate.min.js"></script>
+    <script src="app/js/angular-animate.min.js"></script>
     <script src="app/js/angular-route.min.js"></script>
+    <script src="app/js/angular-messages.min.js"></script>
     <script src="app/js/bootstrap.min.js"></script>
-    <!--<script src="app/js/toaster.min.js"></script>-->
     <script src="app/js/toaster.js"></script>
     <script src="app/app.js"></script>
-    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.2/angular-strap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.2/angular-strap.tpl.min.js"></script>-->
-    <script src="app/js/angular-strap.min.js"></script>
+    <script src="app/js/angular-strap.js"></script>
     <script src="app/js/angular-strap.tpl.min.js"></script>
     <script src="app/shared/controller/ContactCtrl.js"></script>
     <script src="app/shared/controller/HomeCtrl.js"></script>
     <script src="app/component/student/service/StudentService.js"></script>
     <script src="app/component/student/controller/StudentCtrl.js"></script>
     <script src="app/component/student/controller/StudentEditCtrl.js"></script>
+
+    <script src="app/shared/directive/compareTo.js"></script>
+    <script src="app/component/account/controller/RegisterCtrl.js"></script>
+
 </body>
 
 </html>

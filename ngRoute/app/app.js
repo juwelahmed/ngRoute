@@ -1,4 +1,4 @@
-﻿var app = angular.module('app', ['ngRoute', 'toaster', 'mgcrea.ngStrap']);
+﻿var app = angular.module('app', ['ngMessages', 'ngRoute', 'ngAnimate','toaster', 'mgcrea.ngStrap']);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
@@ -23,7 +23,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
            controller: 'StudentEditCtrl'
        }).
       when('/register', {
-          templateUrl: 'app/view/register.html',
+          templateUrl: 'app/component/account/view/registerView.html',
           controller: 'RegisterCtrl'
       }).
       otherwise({

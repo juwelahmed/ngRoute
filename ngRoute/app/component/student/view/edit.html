@@ -1,4 +1,49 @@
-﻿<h1>{{title}}</h1>
+﻿<style>
+    .icon {
+        font-family: initial;
+        font-weight: normal;
+        font-size: 320%;
+        background-color: #F0F0F0;
+    }
+    .btn-flat {
+        filter: progid:DXImageTransform.Microsoft.Gradient(enabled='false');
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        background-image: none;
+        border: 0;
+    }
+    .hamburger-menu {
+        width: 30px;
+        height: 5px;
+        background-color: #111;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .hamburger-menu:after, .hamburger-menu:before {
+        content: '';
+        width: 100%;
+        height: 5px;
+        background-color: #111;
+        position: absolute;
+        border-radius: 5px;
+    }
+
+    .hamburger-menu:after {
+        top: 10px;
+    }
+
+    .hamburger-menu:before {
+        top: 20px;
+    }
+</style>
+
+<div>
+    <span class="btn-flat icon">&#65513;</span>
+    <span class="btn-flat">{{title}}</span>
+    <div class="hamburger-menu"></div>
+</div>
 <hr />
 <toaster-container toaster-options="{'time-out': 3000, 'close-button':true, 'animation-class': 'toast-top-right'}"></toaster-container>
 
